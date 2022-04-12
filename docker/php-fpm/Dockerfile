@@ -17,4 +17,4 @@ COPY --from=composer:1 /usr/bin/composer /usr/bin/composer
 COPY --from=node:14.2 /usr/local/bin /usr/local/bin
 COPY --from=node:14.2 /usr/local/lib /usr/local/lib
 
-WORKDIR /var/www/html
+WORKDIR /var/www
