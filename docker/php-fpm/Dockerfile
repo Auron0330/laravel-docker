@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-COPY --from=node:14.2 /usr/local/bin /usr/local/bin
-COPY --from=node:14.2 /usr/local/lib /usr/local/lib
+COPY --from=node:18.16 /usr/local/bin /usr/local/bin
+COPY --from=node:18.16 /usr/local/lib /usr/local/lib
 
 WORKDIR /var/www
